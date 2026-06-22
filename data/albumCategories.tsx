@@ -41,7 +41,7 @@ export default [{
       artistsHeadline: 'Journey, Escape, Avicii'
     },
   ]
-},{
+}, {
   id: '3',
   title: 'Shows to try',
   albums: [
