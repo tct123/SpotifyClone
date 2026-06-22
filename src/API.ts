@@ -9,8 +9,8 @@ export type CreateAlbumCategoryInput = {
 
 export type ModelAlbumCategoryConditionInput = {
   title?: ModelStringInput | null,
-  and?: Array< ModelAlbumCategoryConditionInput | null > | null,
-  or?: Array< ModelAlbumCategoryConditionInput | null > | null,
+  and?: Array<ModelAlbumCategoryConditionInput | null> | null,
+  or?: Array<ModelAlbumCategoryConditionInput | null> | null,
   not?: ModelAlbumCategoryConditionInput | null,
 };
 
@@ -23,7 +23,7 @@ export type ModelStringInput = {
   gt?: string | null,
   contains?: string | null,
   notContains?: string | null,
-  between?: Array< string | null > | null,
+  between?: Array<string | null> | null,
   beginsWith?: string | null,
   attributeExists?: boolean | null,
   attributeType?: ModelAttributeTypes | null,
@@ -51,7 +51,7 @@ export type ModelSizeInput = {
   lt?: number | null,
   ge?: number | null,
   gt?: number | null,
-  between?: Array< number | null > | null,
+  between?: Array<number | null> | null,
 };
 
 export type UpdateAlbumCategoryInput = {
@@ -80,8 +80,8 @@ export type ModelAlbumConditionInput = {
   imageUri?: ModelStringInput | null,
   artistsHeadline?: ModelStringInput | null,
   albumCategoryId?: ModelIDInput | null,
-  and?: Array< ModelAlbumConditionInput | null > | null,
-  or?: Array< ModelAlbumConditionInput | null > | null,
+  and?: Array<ModelAlbumConditionInput | null> | null,
+  or?: Array<ModelAlbumConditionInput | null> | null,
   not?: ModelAlbumConditionInput | null,
 };
 
@@ -92,7 +92,7 @@ export type ModelIntInput = {
   lt?: number | null,
   ge?: number | null,
   gt?: number | null,
-  between?: Array< number | null > | null,
+  between?: Array<number | null> | null,
   attributeExists?: boolean | null,
   attributeType?: ModelAttributeTypes | null,
 };
@@ -106,7 +106,7 @@ export type ModelIDInput = {
   gt?: string | null,
   contains?: string | null,
   notContains?: string | null,
-  between?: Array< string | null > | null,
+  between?: Array<string | null> | null,
   beginsWith?: string | null,
   attributeExists?: boolean | null,
   attributeType?: ModelAttributeTypes | null,
@@ -142,8 +142,8 @@ export type ModelSongConditionInput = {
   title?: ModelStringInput | null,
   artist?: ModelStringInput | null,
   albumId?: ModelIDInput | null,
-  and?: Array< ModelSongConditionInput | null > | null,
-  or?: Array< ModelSongConditionInput | null > | null,
+  and?: Array<ModelSongConditionInput | null> | null,
+  or?: Array<ModelSongConditionInput | null> | null,
   not?: ModelSongConditionInput | null,
 };
 
@@ -163,8 +163,8 @@ export type DeleteSongInput = {
 export type ModelAlbumCategoryFilterInput = {
   id?: ModelIDInput | null,
   title?: ModelStringInput | null,
-  and?: Array< ModelAlbumCategoryFilterInput | null > | null,
-  or?: Array< ModelAlbumCategoryFilterInput | null > | null,
+  and?: Array<ModelAlbumCategoryFilterInput | null> | null,
+  or?: Array<ModelAlbumCategoryFilterInput | null> | null,
   not?: ModelAlbumCategoryFilterInput | null,
 };
 
@@ -176,8 +176,8 @@ export type ModelAlbumFilterInput = {
   imageUri?: ModelStringInput | null,
   artistsHeadline?: ModelStringInput | null,
   albumCategoryId?: ModelIDInput | null,
-  and?: Array< ModelAlbumFilterInput | null > | null,
-  or?: Array< ModelAlbumFilterInput | null > | null,
+  and?: Array<ModelAlbumFilterInput | null> | null,
+  or?: Array<ModelAlbumFilterInput | null> | null,
   not?: ModelAlbumFilterInput | null,
 };
 
@@ -188,8 +188,8 @@ export type ModelSongFilterInput = {
   title?: ModelStringInput | null,
   artist?: ModelStringInput | null,
   albumId?: ModelIDInput | null,
-  and?: Array< ModelSongFilterInput | null > | null,
-  or?: Array< ModelSongFilterInput | null > | null,
+  and?: Array<ModelSongFilterInput | null> | null,
+  or?: Array<ModelSongFilterInput | null> | null,
   not?: ModelSongFilterInput | null,
 };
 
@@ -199,13 +199,13 @@ export type CreateAlbumCategoryMutationVariables = {
 };
 
 export type CreateAlbumCategoryMutation = {
-  createAlbumCategory:  {
+  createAlbumCategory: {
     __typename: "AlbumCategory",
     id: string,
     title: string,
-    albums:  {
+    albums: {
       __typename: "ModelAlbumConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Album",
         id: string,
         name: string,
@@ -216,7 +216,7 @@ export type CreateAlbumCategoryMutation = {
         albumCategoryId: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
     } | null,
     createdAt: string,
@@ -230,13 +230,13 @@ export type UpdateAlbumCategoryMutationVariables = {
 };
 
 export type UpdateAlbumCategoryMutation = {
-  updateAlbumCategory:  {
+  updateAlbumCategory: {
     __typename: "AlbumCategory",
     id: string,
     title: string,
-    albums:  {
+    albums: {
       __typename: "ModelAlbumConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Album",
         id: string,
         name: string,
@@ -247,7 +247,7 @@ export type UpdateAlbumCategoryMutation = {
         albumCategoryId: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
     } | null,
     createdAt: string,
@@ -261,13 +261,13 @@ export type DeleteAlbumCategoryMutationVariables = {
 };
 
 export type DeleteAlbumCategoryMutation = {
-  deleteAlbumCategory:  {
+  deleteAlbumCategory: {
     __typename: "AlbumCategory",
     id: string,
     title: string,
-    albums:  {
+    albums: {
       __typename: "ModelAlbumConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Album",
         id: string,
         name: string,
@@ -278,7 +278,7 @@ export type DeleteAlbumCategoryMutation = {
         albumCategoryId: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
     } | null,
     createdAt: string,
@@ -292,7 +292,7 @@ export type CreateAlbumMutationVariables = {
 };
 
 export type CreateAlbumMutation = {
-  createAlbum:  {
+  createAlbum: {
     __typename: "Album",
     id: string,
     name: string,
@@ -300,9 +300,9 @@ export type CreateAlbumMutation = {
     numberOfLikes: number,
     imageUri: string,
     artistsHeadline: string,
-    songs:  {
+    songs: {
       __typename: "ModelSongConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Song",
         id: string,
         imageUri: string,
@@ -312,15 +312,15 @@ export type CreateAlbumMutation = {
         albumId: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
     } | null,
     albumCategoryId: string,
-    albumCategory:  {
+    albumCategory: {
       __typename: "AlbumCategory",
       id: string,
       title: string,
-      albums:  {
+      albums: {
         __typename: "ModelAlbumConnection",
         nextToken: string | null,
       } | null,
@@ -338,7 +338,7 @@ export type UpdateAlbumMutationVariables = {
 };
 
 export type UpdateAlbumMutation = {
-  updateAlbum:  {
+  updateAlbum: {
     __typename: "Album",
     id: string,
     name: string,
@@ -346,9 +346,9 @@ export type UpdateAlbumMutation = {
     numberOfLikes: number,
     imageUri: string,
     artistsHeadline: string,
-    songs:  {
+    songs: {
       __typename: "ModelSongConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Song",
         id: string,
         imageUri: string,
@@ -358,15 +358,15 @@ export type UpdateAlbumMutation = {
         albumId: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
     } | null,
     albumCategoryId: string,
-    albumCategory:  {
+    albumCategory: {
       __typename: "AlbumCategory",
       id: string,
       title: string,
-      albums:  {
+      albums: {
         __typename: "ModelAlbumConnection",
         nextToken: string | null,
       } | null,
@@ -384,7 +384,7 @@ export type DeleteAlbumMutationVariables = {
 };
 
 export type DeleteAlbumMutation = {
-  deleteAlbum:  {
+  deleteAlbum: {
     __typename: "Album",
     id: string,
     name: string,
@@ -392,9 +392,9 @@ export type DeleteAlbumMutation = {
     numberOfLikes: number,
     imageUri: string,
     artistsHeadline: string,
-    songs:  {
+    songs: {
       __typename: "ModelSongConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Song",
         id: string,
         imageUri: string,
@@ -404,15 +404,15 @@ export type DeleteAlbumMutation = {
         albumId: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
     } | null,
     albumCategoryId: string,
-    albumCategory:  {
+    albumCategory: {
       __typename: "AlbumCategory",
       id: string,
       title: string,
-      albums:  {
+      albums: {
         __typename: "ModelAlbumConnection",
         nextToken: string | null,
       } | null,
@@ -430,7 +430,7 @@ export type CreateSongMutationVariables = {
 };
 
 export type CreateSongMutation = {
-  createSong:  {
+  createSong: {
     __typename: "Song",
     id: string,
     imageUri: string,
@@ -438,7 +438,7 @@ export type CreateSongMutation = {
     title: string,
     artist: string,
     albumId: string,
-    album:  {
+    album: {
       __typename: "Album",
       id: string,
       name: string,
@@ -446,12 +446,12 @@ export type CreateSongMutation = {
       numberOfLikes: number,
       imageUri: string,
       artistsHeadline: string,
-      songs:  {
+      songs: {
         __typename: "ModelSongConnection",
         nextToken: string | null,
       } | null,
       albumCategoryId: string,
-      albumCategory:  {
+      albumCategory: {
         __typename: "AlbumCategory",
         id: string,
         title: string,
@@ -472,7 +472,7 @@ export type UpdateSongMutationVariables = {
 };
 
 export type UpdateSongMutation = {
-  updateSong:  {
+  updateSong: {
     __typename: "Song",
     id: string,
     imageUri: string,
@@ -480,7 +480,7 @@ export type UpdateSongMutation = {
     title: string,
     artist: string,
     albumId: string,
-    album:  {
+    album: {
       __typename: "Album",
       id: string,
       name: string,
@@ -488,12 +488,12 @@ export type UpdateSongMutation = {
       numberOfLikes: number,
       imageUri: string,
       artistsHeadline: string,
-      songs:  {
+      songs: {
         __typename: "ModelSongConnection",
         nextToken: string | null,
       } | null,
       albumCategoryId: string,
-      albumCategory:  {
+      albumCategory: {
         __typename: "AlbumCategory",
         id: string,
         title: string,
@@ -514,7 +514,7 @@ export type DeleteSongMutationVariables = {
 };
 
 export type DeleteSongMutation = {
-  deleteSong:  {
+  deleteSong: {
     __typename: "Song",
     id: string,
     imageUri: string,
@@ -522,7 +522,7 @@ export type DeleteSongMutation = {
     title: string,
     artist: string,
     albumId: string,
-    album:  {
+    album: {
       __typename: "Album",
       id: string,
       name: string,
@@ -530,12 +530,12 @@ export type DeleteSongMutation = {
       numberOfLikes: number,
       imageUri: string,
       artistsHeadline: string,
-      songs:  {
+      songs: {
         __typename: "ModelSongConnection",
         nextToken: string | null,
       } | null,
       albumCategoryId: string,
-      albumCategory:  {
+      albumCategory: {
         __typename: "AlbumCategory",
         id: string,
         title: string,
@@ -555,13 +555,13 @@ export type GetAlbumCategoryQueryVariables = {
 };
 
 export type GetAlbumCategoryQuery = {
-  getAlbumCategory:  {
+  getAlbumCategory: {
     __typename: "AlbumCategory",
     id: string,
     title: string,
-    albums:  {
+    albums: {
       __typename: "ModelAlbumConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Album",
         id: string,
         name: string,
@@ -572,7 +572,7 @@ export type GetAlbumCategoryQuery = {
         albumCategoryId: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
     } | null,
     createdAt: string,
@@ -587,19 +587,19 @@ export type ListAlbumCategorysQueryVariables = {
 };
 
 export type ListAlbumCategorysQuery = {
-  listAlbumCategorys:  {
+  listAlbumCategorys: {
     __typename: "ModelAlbumCategoryConnection",
-    items:  Array< {
+    items: Array<{
       __typename: "AlbumCategory",
       id: string,
       title: string,
-      albums:  {
+      albums: {
         __typename: "ModelAlbumConnection",
         nextToken: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null> | null,
     nextToken: string | null,
   } | null,
 };
@@ -609,7 +609,7 @@ export type GetAlbumQueryVariables = {
 };
 
 export type GetAlbumQuery = {
-  getAlbum:  {
+  getAlbum: {
     __typename: "Album",
     id: string,
     name: string,
@@ -617,9 +617,9 @@ export type GetAlbumQuery = {
     numberOfLikes: number,
     imageUri: string,
     artistsHeadline: string,
-    songs:  {
+    songs: {
       __typename: "ModelSongConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Song",
         id: string,
         imageUri: string,
@@ -629,15 +629,15 @@ export type GetAlbumQuery = {
         albumId: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
     } | null,
     albumCategoryId: string,
-    albumCategory:  {
+    albumCategory: {
       __typename: "AlbumCategory",
       id: string,
       title: string,
-      albums:  {
+      albums: {
         __typename: "ModelAlbumConnection",
         nextToken: string | null,
       } | null,
@@ -656,9 +656,9 @@ export type ListAlbumsQueryVariables = {
 };
 
 export type ListAlbumsQuery = {
-  listAlbums:  {
+  listAlbums: {
     __typename: "ModelAlbumConnection",
-    items:  Array< {
+    items: Array<{
       __typename: "Album",
       id: string,
       name: string,
@@ -666,12 +666,12 @@ export type ListAlbumsQuery = {
       numberOfLikes: number,
       imageUri: string,
       artistsHeadline: string,
-      songs:  {
+      songs: {
         __typename: "ModelSongConnection",
         nextToken: string | null,
       } | null,
       albumCategoryId: string,
-      albumCategory:  {
+      albumCategory: {
         __typename: "AlbumCategory",
         id: string,
         title: string,
@@ -680,7 +680,7 @@ export type ListAlbumsQuery = {
       } | null,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null> | null,
     nextToken: string | null,
   } | null,
 };
@@ -690,7 +690,7 @@ export type GetSongQueryVariables = {
 };
 
 export type GetSongQuery = {
-  getSong:  {
+  getSong: {
     __typename: "Song",
     id: string,
     imageUri: string,
@@ -698,7 +698,7 @@ export type GetSongQuery = {
     title: string,
     artist: string,
     albumId: string,
-    album:  {
+    album: {
       __typename: "Album",
       id: string,
       name: string,
@@ -706,12 +706,12 @@ export type GetSongQuery = {
       numberOfLikes: number,
       imageUri: string,
       artistsHeadline: string,
-      songs:  {
+      songs: {
         __typename: "ModelSongConnection",
         nextToken: string | null,
       } | null,
       albumCategoryId: string,
-      albumCategory:  {
+      albumCategory: {
         __typename: "AlbumCategory",
         id: string,
         title: string,
@@ -733,9 +733,9 @@ export type ListSongsQueryVariables = {
 };
 
 export type ListSongsQuery = {
-  listSongs:  {
+  listSongs: {
     __typename: "ModelSongConnection",
-    items:  Array< {
+    items: Array<{
       __typename: "Song",
       id: string,
       imageUri: string,
@@ -743,7 +743,7 @@ export type ListSongsQuery = {
       title: string,
       artist: string,
       albumId: string,
-      album:  {
+      album: {
         __typename: "Album",
         id: string,
         name: string,
@@ -757,19 +757,19 @@ export type ListSongsQuery = {
       } | null,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null> | null,
     nextToken: string | null,
   } | null,
 };
 
 export type OnCreateAlbumCategorySubscription = {
-  onCreateAlbumCategory:  {
+  onCreateAlbumCategory: {
     __typename: "AlbumCategory",
     id: string,
     title: string,
-    albums:  {
+    albums: {
       __typename: "ModelAlbumConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Album",
         id: string,
         name: string,
@@ -780,7 +780,7 @@ export type OnCreateAlbumCategorySubscription = {
         albumCategoryId: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
     } | null,
     createdAt: string,
@@ -789,13 +789,13 @@ export type OnCreateAlbumCategorySubscription = {
 };
 
 export type OnUpdateAlbumCategorySubscription = {
-  onUpdateAlbumCategory:  {
+  onUpdateAlbumCategory: {
     __typename: "AlbumCategory",
     id: string,
     title: string,
-    albums:  {
+    albums: {
       __typename: "ModelAlbumConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Album",
         id: string,
         name: string,
@@ -806,7 +806,7 @@ export type OnUpdateAlbumCategorySubscription = {
         albumCategoryId: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
     } | null,
     createdAt: string,
@@ -815,13 +815,13 @@ export type OnUpdateAlbumCategorySubscription = {
 };
 
 export type OnDeleteAlbumCategorySubscription = {
-  onDeleteAlbumCategory:  {
+  onDeleteAlbumCategory: {
     __typename: "AlbumCategory",
     id: string,
     title: string,
-    albums:  {
+    albums: {
       __typename: "ModelAlbumConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Album",
         id: string,
         name: string,
@@ -832,7 +832,7 @@ export type OnDeleteAlbumCategorySubscription = {
         albumCategoryId: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
     } | null,
     createdAt: string,
@@ -841,7 +841,7 @@ export type OnDeleteAlbumCategorySubscription = {
 };
 
 export type OnCreateAlbumSubscription = {
-  onCreateAlbum:  {
+  onCreateAlbum: {
     __typename: "Album",
     id: string,
     name: string,
@@ -849,9 +849,9 @@ export type OnCreateAlbumSubscription = {
     numberOfLikes: number,
     imageUri: string,
     artistsHeadline: string,
-    songs:  {
+    songs: {
       __typename: "ModelSongConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Song",
         id: string,
         imageUri: string,
@@ -861,15 +861,15 @@ export type OnCreateAlbumSubscription = {
         albumId: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
     } | null,
     albumCategoryId: string,
-    albumCategory:  {
+    albumCategory: {
       __typename: "AlbumCategory",
       id: string,
       title: string,
-      albums:  {
+      albums: {
         __typename: "ModelAlbumConnection",
         nextToken: string | null,
       } | null,
@@ -882,7 +882,7 @@ export type OnCreateAlbumSubscription = {
 };
 
 export type OnUpdateAlbumSubscription = {
-  onUpdateAlbum:  {
+  onUpdateAlbum: {
     __typename: "Album",
     id: string,
     name: string,
@@ -890,9 +890,9 @@ export type OnUpdateAlbumSubscription = {
     numberOfLikes: number,
     imageUri: string,
     artistsHeadline: string,
-    songs:  {
+    songs: {
       __typename: "ModelSongConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Song",
         id: string,
         imageUri: string,
@@ -902,15 +902,15 @@ export type OnUpdateAlbumSubscription = {
         albumId: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
     } | null,
     albumCategoryId: string,
-    albumCategory:  {
+    albumCategory: {
       __typename: "AlbumCategory",
       id: string,
       title: string,
-      albums:  {
+      albums: {
         __typename: "ModelAlbumConnection",
         nextToken: string | null,
       } | null,
@@ -923,7 +923,7 @@ export type OnUpdateAlbumSubscription = {
 };
 
 export type OnDeleteAlbumSubscription = {
-  onDeleteAlbum:  {
+  onDeleteAlbum: {
     __typename: "Album",
     id: string,
     name: string,
@@ -931,9 +931,9 @@ export type OnDeleteAlbumSubscription = {
     numberOfLikes: number,
     imageUri: string,
     artistsHeadline: string,
-    songs:  {
+    songs: {
       __typename: "ModelSongConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Song",
         id: string,
         imageUri: string,
@@ -943,15 +943,15 @@ export type OnDeleteAlbumSubscription = {
         albumId: string,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
     } | null,
     albumCategoryId: string,
-    albumCategory:  {
+    albumCategory: {
       __typename: "AlbumCategory",
       id: string,
       title: string,
-      albums:  {
+      albums: {
         __typename: "ModelAlbumConnection",
         nextToken: string | null,
       } | null,
@@ -964,7 +964,7 @@ export type OnDeleteAlbumSubscription = {
 };
 
 export type OnCreateSongSubscription = {
-  onCreateSong:  {
+  onCreateSong: {
     __typename: "Song",
     id: string,
     imageUri: string,
@@ -972,7 +972,7 @@ export type OnCreateSongSubscription = {
     title: string,
     artist: string,
     albumId: string,
-    album:  {
+    album: {
       __typename: "Album",
       id: string,
       name: string,
@@ -980,12 +980,12 @@ export type OnCreateSongSubscription = {
       numberOfLikes: number,
       imageUri: string,
       artistsHeadline: string,
-      songs:  {
+      songs: {
         __typename: "ModelSongConnection",
         nextToken: string | null,
       } | null,
       albumCategoryId: string,
-      albumCategory:  {
+      albumCategory: {
         __typename: "AlbumCategory",
         id: string,
         title: string,
@@ -1001,7 +1001,7 @@ export type OnCreateSongSubscription = {
 };
 
 export type OnUpdateSongSubscription = {
-  onUpdateSong:  {
+  onUpdateSong: {
     __typename: "Song",
     id: string,
     imageUri: string,
@@ -1009,7 +1009,7 @@ export type OnUpdateSongSubscription = {
     title: string,
     artist: string,
     albumId: string,
-    album:  {
+    album: {
       __typename: "Album",
       id: string,
       name: string,
@@ -1017,12 +1017,12 @@ export type OnUpdateSongSubscription = {
       numberOfLikes: number,
       imageUri: string,
       artistsHeadline: string,
-      songs:  {
+      songs: {
         __typename: "ModelSongConnection",
         nextToken: string | null,
       } | null,
       albumCategoryId: string,
-      albumCategory:  {
+      albumCategory: {
         __typename: "AlbumCategory",
         id: string,
         title: string,
@@ -1038,7 +1038,7 @@ export type OnUpdateSongSubscription = {
 };
 
 export type OnDeleteSongSubscription = {
-  onDeleteSong:  {
+  onDeleteSong: {
     __typename: "Song",
     id: string,
     imageUri: string,
@@ -1046,7 +1046,7 @@ export type OnDeleteSongSubscription = {
     title: string,
     artist: string,
     albumId: string,
-    album:  {
+    album: {
       __typename: "Album",
       id: string,
       name: string,
@@ -1054,12 +1054,12 @@ export type OnDeleteSongSubscription = {
       numberOfLikes: number,
       imageUri: string,
       artistsHeadline: string,
-      songs:  {
+      songs: {
         __typename: "ModelSongConnection",
         nextToken: string | null,
       } | null,
       albumCategoryId: string,
-      albumCategory:  {
+      albumCategory: {
         __typename: "AlbumCategory",
         id: string,
         title: string,
